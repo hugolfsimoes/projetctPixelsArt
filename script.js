@@ -9,7 +9,7 @@ function criaCor() {
 function criaPaleta() {
   const paletaDeCores = document.querySelector('#color-palette');
 
-  for (let index = 0; index < 4; index += 1) {
+  for (let index = 0; index < 6; index += 1) {
     const criaCaixasPaleta = document.createElement('div');
     criaCaixasPaleta.className = 'color';
     paletaDeCores.appendChild(criaCaixasPaleta);
@@ -17,17 +17,22 @@ function criaPaleta() {
 
   const caixasPaleta = document.querySelectorAll('.color');
   caixasPaleta[0].style.backgroundColor = 'black';
-  /*  caixasPaleta[1].style.backgroundColor = criaCor();
-   caixasPaleta[2].style.backgroundColor = criaCor();
-   caixasPaleta[3].style.backgroundColor = criaCor(); */
-  caixasPaleta[1].style.backgroundColor = 'rgb(237, 239, 42)';
-  caixasPaleta[2].style.backgroundColor = 'rgb(246, 66, 37)';
-  caixasPaleta[3].style.backgroundColor = 'white';
-
+ /*  caixasPaleta[0].style.backgroundColor = criaCor();
+  caixasPaleta[1].style.backgroundColor = criaCor();
+   caixasPaleta[2].style.backgroundColor = criaCor(); */
+/*    caixasPaleta[3].style.backgroundColor = criaCor(); */
+  caixasPaleta[1].style.backgroundColor = 'rgb(236, 43, 0)';
+  caixasPaleta[2].style.backgroundColor = 'rgb(59, 58, 255)';
+  caixasPaleta[3].style.backgroundColor = 'rgb(139, 46, 0)';
+  caixasPaleta[4].style.backgroundColor = 'rgb(253, 255, 0)';
+  caixasPaleta[5].style.backgroundColor = 'rgb(247, 201, 130)';
+  
   caixasPaleta[0].id = 'box1';
   caixasPaleta[1].id = 'box2';
   caixasPaleta[2].id = 'box3';
   caixasPaleta[3].id = 'box4';
+  caixasPaleta[4].id = 'box5';
+  caixasPaleta[5].id = 'box6';
 }
 criaPaleta();
 
